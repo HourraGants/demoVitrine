@@ -3,19 +3,18 @@ import '../theme.css';
 function Header() {
   return (
     <div id="header">
+      <div id="logo">
+        <p>CARPENTER</p>
+      </div>
       <div>
-        <div>
-          <img className="logo" src="./src/assets/scie.png" alt="Site's logo" />
-        </div>
-        <div>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Works</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="#home" className="nav">Home</a></li>
+          <li><a href="#services" className="nav">Services</a></li>
+          <li><a href="#process" className="nav">Process</a></li>
+          <li><a href="#works" className="nav">Works</a></li>
+          <li><a href="#contact" className="nav">Contact</a></li>
+          <li><img src="./src/assets/search.png" title="Searchbar" alt="search" /></li>
+        </ul>
       </div>
     </div>
   )

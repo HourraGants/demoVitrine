@@ -1,38 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
+    margin: 0; /* Set the margin to 0 (don't touch this) */
+}
+
+html {
+  scroll-behavior: smooth; /* smooth scroll on the page */
 }
 
 body {
-    background-color: #F5F2E4;
-    color: black;
-    font-family: "Open Sans";
+    background-color: #F5F2E4; /* Change the background color of the page */
+    color: black; /* Modify the text color */
+    font-family: "Montserrat"; /* Change the typo */
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Inter";
+    }
 }
 
 #header {
-    display: flex;
-    justify-content: center;
-    background-color: #8A5820;
+    display: flex; /* Create a flexbox */
+    justify-content: space-around; /* Create a space between and around the logo and the navbar */
+    background-color: #6E481F; /* Modify the background color of the header */
+    color: white; /* Modify the text color of the section */
+    padding: .8rem 0; /* Create a space on top and bottom of the header */
+
+    #logo {
+        font-size: 2rem; /* Set the size of the text of the logo */
+        font-weight: 500; /* Set the bold of the logo */
+        letter-spacing: 0.2rem; /* Set the letter spacing of the logo */
+
+        @media (width <= 1024px) {
+            display: none;
+        }
+    }
+
+    div {
+        display: flex; /* Create a flebox */
+        align-items: center; /* Center the content in the <div> */
+
+        ul {
+            display: flex; /* Create a flexbox */
+
+            li {
+                display: flex; /* Create a flexbox */
+                align-items: center; /* Align the items in the box */
+                padding-inline: 1.5rem; /* Change the padding inline of the list */
+                font-weight: 500; /* Change the bold of the text in the list */
+                letter-spacing: 0.1rem; /* Modify the spacing in the text of the list */
+
+                .nav {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .nav:hover {
+                    transition: 0.3s ease, transform 0.3s ease;
+                    transform: translateY(-2px);
+                    border-bottom: 1px solid white;
+                }
+
+                img {
+                    max-height: 60%; /* Modify the height of the search button */
+                }
+            }
+        }
+    }
+}
+
+#hero {
+    background-image: url("./src/assets/carpenter.png"); /* Set the background image */
+    background-size: cover; /* Allows the background image to cover the section */
+    background-position: center; /* The background image will be centered */
+    min-height: 40rem; /* Set a minimum amount of height to allows the full render of the background image */
     color: white;
-    padding: .8rem 0;
 
     div {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        padding: 3rem 4rem;
+        gap: 5rem;
 
-        ul {
-            display: flex;
-
-            li {
-                display: flex;
-                padding-inline: 10px;
-            }
+        h1 {
+            font-size: 5rem;
+            font-weight: 400;
         }
 
-        img {
-            width: 80%;
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+
+        #button {
+            display: inline-block;
+            align-self: flex-start;
+            background-color: rgba(110, 72, 31, 0.7);
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: white;
+            padding: 0.9rem 1.8rem;
+            box-shadow: 2px 2px 2px #6E481F;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        #button:hover {
+            background-color: #6E481F;
+            box-shadow: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+            transform: translateY(1px) translateX(1px);
         }
     }
+}
+
+#services {
 }
