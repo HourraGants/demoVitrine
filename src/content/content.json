@@ -1,0 +1,42 @@
+{
+  "brand": "Dupont Carpentry",
+  "nav": ["Services", "Process", "Projects", "Contact"],
+  "hero": {
+    "title": "Custom carpentry in Caen",
+    "subtitle": "Interior fittings, kitchens, staircases. Free quote within 24 hours.",
+    "cta": "Request a quote",
+    "image": "/hero.jpg",
+    "alt": "Carpenter at work"
+  },
+  "services": [
+    { "title": "Interior carpentry", "desc": "Closets, bookshelves, custom furniture", "img": "./src/assets/chair.jpg" },
+    { "title": "Exterior carpentry", "desc": "Doors, windows, shutters, pergolas", "img": "./src/assets/roof.jpg" },
+    { "title": "Custom kitchens", "desc": "Design, manufacturing, installation", "img": "./src/assets/kitchen.jpg" },
+    { "title": "Stairs & steps", "desc": "Wood flooring, stairs, railings", "img": "./src/assets/stairs.jpg" },
+    { "title": "Furniture restoration", "desc": "Cleaning, repair and fixing", "img": "./src/assets/cleaning.jpg" },
+    { "title": "Custom content", "desc": "We also accept custom requests", "img": "./src/assets/custom.jpg" }
+  ],
+  "process": [
+    { "title": "Consultation", "desc": "Measurements & advice" },
+    { "title": "Design", "desc": "Plans & material selection" },
+    { "title": "Manufacturing", "desc": "Workshop work & quality control" },
+    { "title": "Installation", "desc": "Clean and quick installation" }
+  ],
+  "works": [
+    { "img": "/work1.jpg", "alt": "Oak kitchen — Ouistreham" },
+    { "img": "/work2.jpg", "alt": "Beech staircase — Caen" },
+    { "img": "/work3.jpg", "alt": "Custom bookshelf — Mondeville" }
+  ],
+  "pricing": [
+    { "img": "/work1.jpg", "alt": "Oak kitchen — Ouistreham" },
+    { "img": "/work2.jpg", "alt": "Beech staircase — Caen" },
+    { "img": "/work3.jpg", "alt": "Custom bookshelf — Mondeville" }
+  ],
+  "contact": {
+    "phone": "+33 6 12 34 56 78",
+    "email": "contact@dupontcarpentry.com",
+    "zones": "Caen, Hérouville, Ouistreham",
+    "hours": "Mon–Sat · 8am–6pm",
+    "address": "12 Rue des Ateliers, 14000 Caen"
+  }
+}
