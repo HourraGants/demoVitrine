@@ -70,15 +70,18 @@ body {
 
 #hero {
     background-image: url("./src/assets/carpenter.png"); /* Set the background image */
-    background-size: cover; /* Allows the background image to cover the section */
     background-position: center; /* The background image will be centered */
+    background-repeat: no-repeat;
     min-height: 40rem; /* Set a minimum amount of height to allows the full render of the background image */
     color: white;
+    box-shadow: 0 3px #6E481F;
 
     div {
         display: flex;
         flex-direction: column;
-        padding: 3rem 4rem;
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem 0;
         gap: 5rem;
 
         h1 {
@@ -117,4 +120,54 @@ body {
 }
 
 #services {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    gap: 3rem;
+
+    h3 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    #servicescontent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h4 {
+                font-weight: 500;
+                font-size: 1.3rem;
+                max-width: 12rem;
+            }
+
+            img {
+                max-width: 12rem;
+                min-width: 12rem;
+                max-height: 13rem;
+                min-height: 13rem;
+                border-radius: 7px;
+                transition: color 0.3s ease, transform 0.3s ease;
+            }
+
+            img:hover {
+                transition: color 0.5s ease, transform 0.5s ease;
+                transform: translateY(-10px);
+            }
+        }
+
+    }
+}
+
+#works {
+
 }

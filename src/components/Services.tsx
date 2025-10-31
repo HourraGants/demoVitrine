@@ -5,11 +5,11 @@ function Services() {
   return (
     <div id="services">
       <h3>
-        Services
+        Our Services
       </h3>
       <section id="servicescontent">
         {content.services.map((service, index) => (
-          <div key={index}>
+          <div key={index} id="content">
             <img src={service.img}/>
             <h4>{service.title}</h4>
           </div>

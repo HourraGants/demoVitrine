@@ -1,13 +1,13 @@
 import '../theme.css';
 
-function Services() {
+function Process() {
   return (
-    <div id="services">
+    <div id="process">
       <p>
-        Services
+        Process
       </p>
     </div>
   )
 }
 
-export default Services;
+export default Process;
