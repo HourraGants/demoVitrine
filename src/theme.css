@@ -52,6 +52,7 @@ body {
                 .nav {
                     text-decoration: none;
                     color: white;
+                    transition: 0.3s;
                 }
 
                 .nav:hover {
@@ -168,6 +169,6 @@ body {
     }
 }
 
-#works {
-
+#process {
+    background-color: #FFFDED;
 }
