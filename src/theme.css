@@ -123,8 +123,7 @@ body {
 #services {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    width: 90%;
+    align-items: center;
     margin: 0 auto;
     padding: 3rem 0;
     gap: 3rem;
@@ -171,4 +170,47 @@ body {
 
 #process {
     background-color: #FFFDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    gap: 3rem;
+
+    h3 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    #processcontent {
+        display: flex;
+
+        .process-box {
+            display: flex;
+            align-items: center;
+
+            .process-step {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                min-width: 100px;
+
+                h4 {
+                font-weight: 500;
+                font-size: 1.3rem;
+                max-width: 12rem;
+                }
+
+                img {
+                    width: 50%;
+                    min-width: 100px;
+                }
+            }
+
+            .arrow {
+                stroke-width: 3;
+            }
+        }
+    }
 }
