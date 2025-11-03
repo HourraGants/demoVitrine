@@ -17,10 +17,10 @@
     { "title": "Custom content", "desc": "We also accept custom requests", "img": "./src/assets/custom.jpg" }
   ],
   "process": [
-    { "title": "Consultation", "desc": "Measurements & advice" },
-    { "title": "Design", "desc": "Plans & material selection" },
-    { "title": "Manufacturing", "desc": "Workshop work & quality control" },
-    { "title": "Installation", "desc": "Clean and quick installation" }
+    { "img": "./src/assets/consultation.png", "title": "Consultation", "desc": "Measurements & advice" },
+    { "img": "./src/assets/design.png", "title": "Design", "desc": "Plans & material selection" },
+    { "img": "./src/assets/time.png", "title": "Manufacturing", "desc": "Workshop work & quality control" },
+    { "img": "./src/assets/delivery.png", "title": "Installation", "desc": "Clean and quick installation" }
   ],
   "works": [
     { "img": "/work1.jpg", "alt": "Oak kitchen — Ouistreham" },

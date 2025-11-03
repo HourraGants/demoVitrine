@@ -123,8 +123,7 @@ body {
 #services {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    width: 90%;
+    align-items: center;
     margin: 0 auto;
     padding: 3rem 0;
     gap: 3rem;
@@ -171,4 +170,70 @@ body {
 
 #process {
     background-color: #FFFDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    gap: 3rem;
+
+    h3 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    #processcontent {
+        display: flex;
+
+        .process-box {
+            display: flex;
+            align-items: start;
+
+            .process-step {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                min-width: 10rem;
+
+                img {
+                    width: 50%;
+                    min-width: 100px;
+                    flex: 0 0 auto;
+                }
+
+                h4 {
+                font-weight: 500;
+                font-size: 1.3rem;
+                max-width: 12rem;
+                }
+
+                p {
+                    max-width: 10rem;
+                }
+
+            }
+
+            .arrow {
+                display: flex;
+                align-self: center;
+                padding-bottom: 2rem;
+                stroke-width: 3;
+                flex-shrink: 0;
+
+                @media (width <= 768px) {
+                transform: rotate(90deg);
+                padding: 2rem 0;
+            }
+            }
+
+            @media (width <= 768px) {
+                flex-direction: column;
+            }
+        }
+
+        @media (width <= 768px) {
+            flex-direction: column;
+        }
+    }
 }
