@@ -23,15 +23,51 @@
     { "img": "./src/assets/delivery.png", "title": "Installation", "desc": "Clean and quick installation" }
   ],
   "works": [
-    { "img": "/work1.jpg", "alt": "Oak kitchen — Ouistreham" },
-    { "img": "/work2.jpg", "alt": "Beech staircase — Caen" },
-    { "img": "/work3.jpg", "alt": "Custom bookshelf — Mondeville" }
+    { "img": "./src/assets/work1.jpg", "alt": "Oak table and wooden shelves", "city": "Caen" },
+    { "img": "./src/assets/work2.jpg", "alt": "Oak stairs", "city": "Ouistreham" },
+    { "img": "./src/assets/work3.jpg", "alt": "Oak chairs and table", "city": "Cabourg" },
+    { "img": "./src/assets/work4.jpg", "alt": "Wooden table and oak stool", "city": "Le Havre" },
+    { "img": "./src/assets/work5.jpg", "alt": "Beech shelves", "city": "Cagny" },
+    { "img": "./src/assets/work6.jpg", "alt": "Beech chair and desk", "city": "Ifs" },
+    { "img": "./src/assets/work7.jpg", "alt": "Oak stools and table", "city": "Colombelles" },
+    { "img": "./src/assets/work8.jpg", "alt": "Wooden kitchen and stair", "city": "Caen" },
+    { "img": "./src/assets/work9.jpg", "alt": "Oak chairs and table", "city": "Soliers" },
+    { "img": "./src/assets/work10.jpg", "alt": "Wooden buffet and chair", "city": "Carpiquet" },
+    { "img": "./src/assets/work11.jpg", "alt": "Oak desk and chair", "city": "Caen" },
+    { "img": "./src/assets/work12.jpg", "alt": "Oak table and stools", "city": "Mondeville" }
   ],
   "pricing": [
-    { "img": "/work1.jpg", "alt": "Oak kitchen — Ouistreham" },
-    { "img": "/work2.jpg", "alt": "Beech staircase — Caen" },
-    { "img": "/work3.jpg", "alt": "Custom bookshelf — Mondeville" }
-  ],
+  {
+    "plan": "Starter",
+    "price": "From €800",
+    "features": [
+      "Small furniture & shelving",
+      "Standard woods",
+      "Basic finishes"
+    ],
+    "highlight": false
+  },
+  {
+    "plan": "Custom",
+    "price": "On quote",
+    "features": [
+      "Kitchens, dressings, stairs",
+      "Premium wood options",
+      "Installation included"
+    ],
+    "highlight": true
+  },
+  {
+    "plan": "Premium",
+    "price": "From €2,500",
+    "features": [
+      "Full custom wood projects",
+      "Luxury materials (oak, walnut…)",
+      "3D plans & follow-up"
+    ],
+    "highlight": false
+  }
+],
   "contact": {
     "phone": "+33 6 12 34 56 78",
     "email": "contact@dupontcarpentry.com",

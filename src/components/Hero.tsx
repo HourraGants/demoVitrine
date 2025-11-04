@@ -13,7 +13,7 @@ function Hero() {
           Bespoke, high-quality craftsmanship designed around your needs.<br />
           Affordable pricing and genuine artisanal skill.
         </h2>
-        <a href="#works" id="button">Our Work</a>
+        <a href="#works" className="button-hero">Our Work</a>
       </div>
     </div>
   )
