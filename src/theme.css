@@ -383,3 +383,56 @@ body {
         }
     }
 }
+
+#contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    gap: 3rem;
+
+    h3 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    #contact-description {
+      text-align: center;
+      margin-top: -2rem;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+}
+
+#contactcontent {
+    background-color: #FFFDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    gap: 3rem;
+}
+
+#footer {
+    display: flex; /* Create a flexbox */
+    flex-direction: column;
+    align-items: center;
+    background-color: #6E481F; /* Modify the background color of the header */
+    color: white; /* Modify the text color of the section */
+    padding: .8rem 0; /* Create a space on top and bottom of the header */
+    gap: 2rem;
+
+    #footercontent{
+        display: flex;
+        gap: 10rem;
+
+        #logo {
+        font-size: 2rem; /* Set the size of the text of the logo */
+        font-weight: 500; /* Set the bold of the logo */
+        letter-spacing: 0.2rem; /* Set the letter spacing of the logo */
+        }
+    }
+}
