@@ -45,7 +45,7 @@ function Contact() {
         </h3>
         <p id="contact-description">Contact us with this form <br />and find our details below with our localisation !</p>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div id="name-email">
             <label>
               <input type="text" name="name" placeholder="Name" required />
             </label>
@@ -88,7 +88,7 @@ function Contact() {
           </div>
 
           <div>
-            <button type="submit" disabled={status==="loading"}>
+            <button type="submit" disabled={status==="loading"} id="button-form">
             {status === "loading" ? "Sending…" : "Send"}
             </button>
           </div>
@@ -98,14 +98,25 @@ function Contact() {
         </form>
       </div>
       <div id="contactcontent">
-        <section>
+        <div>
           <h4>Contact Details</h4>
           <p>{content.contact.phone}</p>
           <p>{content.contact.email}</p>
           <p>{content.contact.zones}</p>
           <p>{content.contact.hours}</p>
           <p>{content.contact.address}</p>
-        </section>
+        </div>
+        <div>
+          <a
+            href="https://www.google.com/maps?q=49.1813309627645, -0.37275048079703954" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="map-card"
+          >
+            <img src="./src/assets/map-placeholder.png" alt="Voir notre atelier sur Google Maps" />
+          </a>
+
+        </div>
       </div>
     </div>
   )
