@@ -1,5 +1,6 @@
 import '../theme.css';
 import content from "../content/content.json";
+import { Phone, Mail, Map, Calendar, Pin } from "lucide-react";
 import { useState } from "react";
 
 const FORM_ENDPOINT = "https://formspree.io/f/mblqjpry"; // ← colle ton URL
@@ -97,16 +98,16 @@ function Contact() {
           {status === "error" && <p className="error">Oops, please try again.</p>}
         </form>
       </div>
-      <div id="contactcontent">
-        <div>
+      <div id="contact-content">
+        <div id="contact-details">
           <h4>Contact Details</h4>
-          <p>{content.contact.phone}</p>
-          <p>{content.contact.email}</p>
-          <p>{content.contact.zones}</p>
-          <p>{content.contact.hours}</p>
-          <p>{content.contact.address}</p>
+          <p className="contact-p"><Phone size={18} /> <span className="highlight">{content.contact.phone}</span></p>
+          <p className="contact-p"><Mail size={18} /> <span className="highlight">{content.contact.email}</span></p>
+          <p className="contact-p"><Map size={18} /> <span className="highlight">{content.contact.zones}</span></p>
+          <p className="contact-p"><Calendar size={18} /> <span className="highlight">{content.contact.hours}</span></p>
+          <p className="contact-p"><Pin size={18} /> <span className="highlight">{content.contact.address}</span></p>
         </div>
-        <div>
+        <div id="contact-map">
           <a
             href="https://www.google.com/maps?q=49.1813309627645, -0.37275048079703954" 
             target="_blank"

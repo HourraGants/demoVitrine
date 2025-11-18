@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div id="footer">
       <div id="footercontent">
-        <div>
+        <div id="footer-hero">
           <h4 id="logo">CARPENTER</h4>
           <p>High-quality craftsmanship.</p>
           <p>Affordable pricing and adapted to your need.</p>
@@ -23,7 +23,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-separator"></div>
-        <div>
+        <div id="footer-contact">
           <h5>Contact</h5>
           <p>{content.contact.phone}</p>
           <p>{content.contact.email}</p>
