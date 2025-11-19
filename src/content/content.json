@@ -9,7 +9,7 @@
     "alt": "Carpenter at work"
   },
   "services": [
-    { "title": "Interior carpentry", "desc": "Closets, bookshelves, custom furniture", "img": "../../public/images/chair.JPG" },
+    { "title": "Interior carpentry", "desc": "Closets, bookshelves, custom furniture", "img": "./../public/images/chair.JPG" },
     { "title": "Exterior carpentry", "desc": "Doors, windows, shutters, pergolas", "img": "../../public/images/roof.jpg" },
     { "title": "Custom kitchens", "desc": "Design, manufacturing, installation", "img": "../../public/images/kitchen.jpg" },
     { "title": "Stairs & steps", "desc": "Wood flooring, stairs, railings", "img": "../../public/images/stairs.jpg" },
