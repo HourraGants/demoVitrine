@@ -114,7 +114,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="map-card"
           >
-            <img src="./src/assets/map-placeholder.png" alt="Voir notre atelier sur Google Maps" />
+            <img src="../../images/map-placeholder.png" alt="Voir notre atelier sur Google Maps" />
           </a>
 
         </div>
