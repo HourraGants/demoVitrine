@@ -647,6 +647,10 @@ body {
             align-items: center;
             font-size: 80%;
           }
+
+          @media (width <= 480px) {
+            width: 80%;
+          }
         }
 
         .footer-separator {
