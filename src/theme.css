@@ -118,7 +118,7 @@ body {
 }
 
 #hero {
-    background-image: url("./src/assets/carpenter.png"); /* Set the background image */
+    background-image: url("../public/images/carpenter.png"); /* Set the background image */
     background-position: center; /* The background image will be centered */
     background-repeat: no-repeat;
     min-height: 40rem; /* Set a minimum amount of height to allows the full render of the background image */
