@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../theme.css';
 import { Menu, X } from "lucide-react";
 
@@ -6,6 +6,17 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => {
     setIsOpen(prev => !prev);
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth >= 1024) {
+          setIsOpen(false);
+        }
+      };
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
   };
 
   return (
@@ -28,7 +39,6 @@ function Header() {
           <li><a href="#process" className="header-nav-li">Process</a></li>
           <li><a href="#works" className="header-nav-li">Works</a></li>
           <li><a href="#contact" className="header-nav-li">Contact</a></li>
-          <li><img src="./src/assets/search.png" title="Searchbar" alt="search" /></li>
         </ul>
       </nav>
     </header>
