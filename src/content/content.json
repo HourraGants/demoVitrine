@@ -17,24 +17,24 @@
     { "title": "Custom content", "desc": "We also accept custom requests", "img": "../../images/custom.jpg" }
   ],
   "process": [
-    { "img": "./src/assets/consultation.png", "title": "Consultation", "desc": "Measurements & advice" },
-    { "img": "./src/assets/design.png", "title": "Design", "desc": "Plans & material selection" },
-    { "img": "./src/assets/time.png", "title": "Manufacturing", "desc": "Workshop work & quality control" },
-    { "img": "./src/assets/delivery.png", "title": "Installation", "desc": "Clean and quick installation" }
+    { "img": "../../images/consultation.png", "title": "Consultation", "desc": "Measurements & advice" },
+    { "img": "../../images/design.png", "title": "Design", "desc": "Plans & material selection" },
+    { "img": "../../images/time.png", "title": "Manufacturing", "desc": "Workshop work & quality control" },
+    { "img": "../../images/delivery.png", "title": "Installation", "desc": "Clean and quick installation" }
   ],
   "works": [
-    { "img": "./src/assets/work1.jpg", "alt": "Oak table and wooden shelves", "city": "Caen" },
-    { "img": "./src/assets/work2.jpg", "alt": "Oak stairs", "city": "Ouistreham" },
-    { "img": "./src/assets/work3.jpg", "alt": "Oak chairs and table", "city": "Cabourg" },
-    { "img": "./src/assets/work4.jpg", "alt": "Wooden table and oak stool", "city": "Le Havre" },
-    { "img": "./src/assets/work5.jpg", "alt": "Beech shelves", "city": "Cagny" },
-    { "img": "./src/assets/work6.jpg", "alt": "Beech chair and desk", "city": "Ifs" },
-    { "img": "./src/assets/work7.jpg", "alt": "Oak stools and table", "city": "Colombelles" },
-    { "img": "./src/assets/work8.jpg", "alt": "Wooden kitchen and stair", "city": "Caen" },
-    { "img": "./src/assets/work9.jpg", "alt": "Oak chairs and table", "city": "Soliers" },
-    { "img": "./src/assets/work10.jpg", "alt": "Wooden buffet and chair", "city": "Carpiquet" },
-    { "img": "./src/assets/work11.jpg", "alt": "Oak desk and chair", "city": "Caen" },
-    { "img": "./src/assets/work12.jpg", "alt": "Oak table and stools", "city": "Mondeville" }
+    { "img": "../../images/work1.jpg", "alt": "Oak table and wooden shelves", "city": "Caen" },
+    { "img": "../../images/work2.jpg", "alt": "Oak stairs", "city": "Ouistreham" },
+    { "img": "../../images/work3.jpg", "alt": "Oak chairs and table", "city": "Cabourg" },
+    { "img": "../../images/work4.jpg", "alt": "Wooden table and oak stool", "city": "Le Havre" },
+    { "img": "../../images/work5.jpg", "alt": "Beech shelves", "city": "Cagny" },
+    { "img": "../../images/work6.jpg", "alt": "Beech chair and desk", "city": "Ifs" },
+    { "img": "../../images/work7.jpg", "alt": "Oak stools and table", "city": "Colombelles" },
+    { "img": "../../images/work8.jpg", "alt": "Wooden kitchen and stair", "city": "Caen" },
+    { "img": "../../images/work9.jpg", "alt": "Oak chairs and table", "city": "Soliers" },
+    { "img": "../../images/work10.jpg", "alt": "Wooden buffet and chair", "city": "Carpiquet" },
+    { "img": "../../images/work11.jpg", "alt": "Oak desk and chair", "city": "Caen" },
+    { "img": "../../images/work12.jpg", "alt": "Oak table and stools", "city": "Mondeville" }
   ],
   "pricing": [
   {

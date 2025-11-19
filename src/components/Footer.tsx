@@ -15,7 +15,7 @@ function Footer() {
         <div id="footer-links">
           <h5>Links</h5>
           <ul>
-            <li><a href="#home" className="footer-nav">Home</a></li>
+            <li><a href="#header" className="footer-nav">Home</a></li>
             <li><a href="#services" className="footer-nav">Services</a></li>
             <li><a href="#process" className="footer-nav">Process</a></li>
             <li><a href="#works" className="footer-nav">Works</a></li>
