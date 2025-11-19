@@ -19,79 +19,84 @@ body {
 }
 
 #header {
-    display: flex; /* Create a flexbox */
-    justify-content: space-around; /* Create a space between and around the logo and the navbar */
-    background-color: #6E481F; /* Modify the background color of the header */
-    color: white; /* Modify the text color of the section */
-    padding: .8rem 0; /* Create a space on top and bottom of the header */
-    position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: #6E481F;
+  color: white;
+  padding: .8rem 0;
+  position: relative;
 
-    #logo {
-        font-size: 2rem; /* Set the size of the text of the logo */
-        font-weight: 500; /* Set the bold of the logo */
-        letter-spacing: 0.2rem; /* Set the letter spacing of the logo */
-    }
+  #logo {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+  }
 
-    .header-nav {
-        display: flex; /* Create a flebox */
-        align-items: center; /* Center the content in the <div> */
+  /* --------- NAV DESKTOP (par défaut) --------- */
+  .header-nav {
+    display: flex;
+    align-items: center;
 
-        ul {
-            display: flex; /* Create a flexbox */
+    ul {
+      display: flex;
 
-            li {
-                display: flex; /* Create a flexbox */
-                align-items: center; /* Align the items in the box */
-                padding-inline: 1.5rem; /* Change the padding inline of the list */
-                font-weight: 500; /* Change the bold of the text in the list */
-                letter-spacing: 0.1rem; /* Modify the spacing in the text of the list */
+      li {
+        display: flex;
+        align-items: center;
+        padding-inline: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
 
-                .header-nav-li {
-                    text-decoration: none;
-                    color: white;
-                    transition: 0.3s;
-                }
-
-                .header-nav-li:hover {
-                    transition: 0.3s ease, transform 0.3s ease;
-                    transform: translateY(-2px);
-                    border-bottom: 1px solid white;
-                }
-
-                img {
-                    max-height: 60%; /* Modify the height of the search button */
-                }
-            }
+        .header-nav-li {
+          text-decoration: none;
+          color: white;
+          transition: 0.3s;
         }
 
-        @media (width <= 1024px) {
-            display: none;
-          }
+        .header-nav-li:hover {
+          transition: 0.3s ease, transform 0.3s ease;
+          transform: translateY(-2px);
+          border-bottom: 1px solid white;
+        }
+      }
     }
+  }
 
+  /* --------- BURGER DESKTOP : caché --------- */
+  .header-burger {
+    display: none;
+  }
+
+  /* --------- VERSION MOBILE --------- */
+  @media (max-width: 1024px) {
+
+    /* burger visible */
     .header-burger {
-      display: none;
-
-      @media (max-width: 1024px) {
-            display: flex;
-            align-items: center;
-            border-radius: 10px;
-            background: none;
-            border: none;
-            cursor: pointer;
-          }
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 10; /* pour rester au-dessus du menu */
     }
 
+    /* nav cachée par défaut */
+    .header-nav {
+      display: none;
+    }
+
+    /* nav quand le menu est ouvert */
     .header-nav.nav-open {
       display: flex;
       justify-content: center;
       position: absolute;
-      top: 100%;          /* 👈 commence sous le header */
-      left: 0;            /* 👈 prend toute la largeur */
+      top: 100%;
+      left: 0;
       right: 0;
-      background: #6e481fbd; /* menu opaque ou semi-opaque comme tu veux */
+      background: #6e481fbd;
       padding: 20px 0;
-      z-index: 5;         /* sous le burger */
+      z-index: 5;
 
       ul {
         display: flex;
@@ -101,12 +106,15 @@ body {
 
         li {
           padding: 0.5rem 0;
+
+          .header-nav-li:hover {
+          transition: 0.3s ease, transform 0.3s ease;
+          transform: translateX(2px);
+          }
         }
       }
-      @media (width >= 1024px) {
-          display: none;
-      }
     }
+  }
 }
 
 #hero {
@@ -128,6 +136,10 @@ body {
         h1 {
             font-size: 5rem;
             font-weight: 400;
+
+            @media (width <= 480px) {
+                display: none;
+            }
         }
 
         h2 {
@@ -149,6 +161,10 @@ body {
             font-weight: 600;
             text-decoration: none;
             transition: 0.2s;
+
+            @media (width <= 480px) {
+              align-self: center;
+            }
         }
 
         .button-hero:hover {
@@ -157,6 +173,13 @@ body {
             transition: color 0.3s ease, transform 0.3s ease;
             transform: translateY(1px) translateX(1px);
         }
+    }
+
+    @media (width <= 480px) {
+        min-height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -452,6 +475,13 @@ body {
         #name-email {
             display: flex;
             gap: 3rem;
+
+            @media (width <= 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
         }
 
         input, select, textarea {
@@ -462,6 +492,15 @@ body {
             background-color: #FFFDED;
             box-shadow: 5px 3px 5px rgba(0,0,0,0.1);
             font-family: "Montserrat";
+
+            @media (width <= 480px) {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              justify-self: center;
+              width: 80%;
+            }
         }
 
         input:focus, select:focus, textarea:focus {
@@ -490,6 +529,12 @@ body {
             box-shadow: none;
             transition: color 0.3s ease, transform 0.3s ease;
             transform: translateY(1px) translateX(1px);
+        }
+
+        @media (width <= 480px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
@@ -590,6 +635,17 @@ body {
           p {
             letter-spacing: 0.1rem;
             text-align: justify;
+
+            @media (width <= 860px) {
+            text-align: center;
+            }
+          }
+
+          @media (width <= 860px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 80%;
           }
         }
 
@@ -650,6 +706,13 @@ body {
             font-size: 1.5rem;
             letter-spacing: 1px;
           }
+
+          @media (width <= 860px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 80%;
+          }
         }
 
         @media (width <= 1200px) {
@@ -659,6 +722,7 @@ body {
         @media (width <= 860px) {
             flex-wrap: wrap;
             justify-content: center;
+            width: 100%;
           }
     }
 }
